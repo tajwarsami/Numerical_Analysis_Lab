@@ -1,11 +1,11 @@
 function retval = task_102 ()
 
 function y = f(x)
-    y =3*x.^3-4*x-9;
+    y =x.^3-4*x-9;
 end
 
 a = 1;
-b = 2;
+b = 3;
 t = 0.000001;
 
 roots = [];
@@ -28,7 +28,7 @@ end
 
 fprintf('Total iterations needed %d\n', total_iterations);
 fprintf('%f is the approximated solution.\n',roots(end));
- x = linspace(1,2,100);
+ x = linspace(1,3,100);
  y = f(x);
 
  figure;
